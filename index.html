@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital de Odontología</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link  rel="icon"   href="img/logo.jpg" type="image/jpg" />
+        <script type="text/javascript">
+            function validar() {
+                //var user=document.getElementById("usuario").value;
+                //var contra=document.getElementById("pass").value;
+                if (document.form.usuario.value == 'noemi' && document.form.pass.value == '123') {
+                    document.form.submit();
+                    // alert("Datos correctos");
+
+                } else {
+
+
+
+                    alert("Verifique sus datos");
+                    location.reload();
+
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+
+        <div class="login-box">
+            <img src="img/diente2.jpg" class="avatar" alt="Avatar Image">
+            <h1>Login</h1>
+            <form name="form" action="recepcion.html">
+                <!-- USERNAME INPUT -->
+                <label for="username">Usuario:</label>
+                <input type="text" placeholder="Digite usuario" name="usuario" id="usuario">
+                <!-- PASSWORD INPUT -->
+                <label for="password">Contraseña:</label>
+                <input type="password" placeholder="Digite contraseña" name="pass" id="pass">
+                <input type="button" value="Ingresar" onclick="validar()">
+
+            </form>
+        </div>
+    </body>
+</html>
